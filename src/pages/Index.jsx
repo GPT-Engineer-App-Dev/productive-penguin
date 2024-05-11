@@ -36,7 +36,7 @@ const Index = () => {
         <Heading>Todo App</Heading>
         <Flex as="form" onSubmit={(e) => { e.preventDefault(); handleAddTask(); }} width="100%">
           <Input placeholder="Add a new task" value={input} onChange={(e) => setInput(e.target.value)} />
-          <Button type="submit" colorScheme="blue" ml={2}>Add</Button>
+          <Button type="submit" colorScheme="teal" ml={2}>Add</Button>
         </Flex>
         <List width="100%">
           {tasks.map(task => (
